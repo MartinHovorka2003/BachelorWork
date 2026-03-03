@@ -14,7 +14,7 @@ resume_name:                    "Hovorka Martin"
 resume_title:                   "Klasifikácia nekonzistentnosti generovaných dát s vysvetlením"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "martin.hovorka2003@gmail.com"
+resume_contact_email:           "hovorka9@uniba.sk"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       "555-7334"
