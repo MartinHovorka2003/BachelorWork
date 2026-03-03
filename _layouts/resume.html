@@ -64,7 +64,6 @@
       </section>
 
 
-      <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
           <h2>Cieľ</h2>
@@ -72,11 +71,10 @@
 
         <div class="resume-item">
           <p>Chcem aby táto práca slúžila ako príručkou na boj proti dezinformácii. Cieľ je najmä zistiť, kde umelá inteligencia zlyháva, a potom zaútočiť na tieto zraniteľnosti analýzou. Najviac zdajúce sa krehké oblasti sú teda vanishing pointy, zrkadlové odrazy a tiene. Čiže hlavným cieľom je rozobrať tieto vlastnosti od ich základov, aplikovať ich, a dospieť ku zrozumiteľnému a spoľahlivému záveru.</p>
-        </div><!-- end of resume-item -->
+        </div>
 
         
       </section>
-      <!-- end Education -->
 
 
       <section class="content-section">
@@ -151,124 +149,22 @@
 
       </section>
 
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
       <section class="content-section">
-
         <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-        {% for skill in site.data.skills %}
-        <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.description }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
-
-      {% if site.resume_section_recognition %}
-      <!-- begin Recognition -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Recognition</h2>
-        </header>
-
-        {% for recognition in site.data.recognitions %}
-        <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
-          <h4 class="resume-item-details">{{ recognition.organization }} &bull; {{ recognition.year }}</h4>
-          <p class="resume-item-copy">{{ recognition.summary }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Recognition -->
-      {% endif %}
-
-      {% if site.resume_section_associations %}
-      <!-- begin Associations -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Associations</h2>
-        </header>
-
-        {% for association in site.data.associations %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
-          <p class="resume-item-copy">{{ association.summary }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Associations -->
-      {% endif %}
-
-      {% if site.resume_section_interests %}
-      <!-- begin Interests -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Outside Interests</h2>
+          <h2>Zdroje</h2>
         </header>
 
         <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for interest in site.data.interests %}
-            <li>{{ interest.description }}</li>
-            {% endfor %}
-          </ul>
+            <p>Paul Beardsley and David Murray. Camera calibration using vanishing points. In Proceedings of the British Machine Vision Conference (BMVC). BMVA Press, 1992.</p>
+            <p>H. Farid. A survey of image forgery detection. IEEE Signal Processing Magazine, 26(2), 2009.</p>
+            <p>H. Farid. Photo forensics: Beyond the pixels. American Scientist, 105(5), 2017.</p>
+            <p>A. Gallagher and H. Farid. Image forgery detection. ACM Transactions on Graphics (TOG), 31(4), 2012</p>
+            <p>E. Kee, J. F. O’Brien, and H. Farid. Exposing photo manipulation with inconsistent shadows. ACM Transactions on Graphics (TOG), 32(3), 2013</p>
+            <p>Amped Software. How to reveal ai-generated images by checking shadows and reflections in amped authenticate. Forensic Focus, 2023. Accessed: 2025-06-09</p>  
         </div>
 
+        
       </section>
-      <!-- end Interests -->
-      {% endif %}
-
-      {% if site.resume_section_links %}
-      <!-- begin Links -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Additional Links</h2>
-        </header>
-
-        <div class="resume-item">
-          <ul class="resume-item-list">
-            {% for link in site.data.links %}
-            <li><a href={{ link.url }} itemprop="url">{{ link.description }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-
-      </section>
-      <!-- end Links -->
-      {% endif %}
-
-      {% if site.resume_print_social_links %}
-      <!-- begin Print Social Links -->
-      <section class="content-section print-only">
-
-        <header class="section-header">
-          <h2>Social Links</h2>
-        </header>
-
-        <div class="resume-item">
-        {% include print-social-links.html %}
-        </div>
-
-      </section>
-      <!-- end Print Social Links -->
-      {% endif %}
-
-      <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
-      </footer>
 
     </div>
 
