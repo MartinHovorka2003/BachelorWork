@@ -64,32 +64,19 @@
       </section>
 
 
-      {% if site.resume_section_education %}
       <!-- begin Education -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Education</h2>
+          <h2>Cieľ</h2>
         </header>
 
-        {% for education in site.data.education %}
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
-          <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-          <p class="resume-item-copy" itemprop="description">
-            <ul class="resume-item-list">
-              {% for award in education.awards %}
-              <li>{{ award.award }}</li>
-              {% endfor %}
-            </ul>
+        <div class="resume-item">
+          <p> chcem aby táto práca slúžila ako príručkou na boj proti dezinformácii. Cieľ je najmä zistiť, kde umelá inteligencia zlyháva, a potom zaútočiť na tieto zraniteľnosti analýzou. Najviac zdajúce sa krehké oblasti sú teda vanishing pointy, zrkadlové odrazy a tiene. Čiže hlavným cieľom je rozobrať tieto vlastnosti od ich základov, aplikovať ich, a dospieť ku zrozumiteľnému a spoľahlivému záveru.</p>
+        </div><!-- end of resume-item -->
 
-
-          <p class="resume-item-copy">{{ education.summary }}</p>
-        </div>
-        {% endfor %}
+        
       </section>
       <!-- end Education -->
-      {% endif %}
 
 
       {% if site.resume_section_projects %}
