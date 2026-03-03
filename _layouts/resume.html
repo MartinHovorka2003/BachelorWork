@@ -71,7 +71,7 @@
         </header>
 
         <div class="resume-item">
-          <p> chcem aby táto práca slúžila ako príručkou na boj proti dezinformácii. Cieľ je najmä zistiť, kde umelá inteligencia zlyháva, a potom zaútočiť na tieto zraniteľnosti analýzou. Najviac zdajúce sa krehké oblasti sú teda vanishing pointy, zrkadlové odrazy a tiene. Čiže hlavným cieľom je rozobrať tieto vlastnosti od ich základov, aplikovať ich, a dospieť ku zrozumiteľnému a spoľahlivému záveru.</p>
+          <p>Chcem aby táto práca slúžila ako príručkou na boj proti dezinformácii. Cieľ je najmä zistiť, kde umelá inteligencia zlyháva, a potom zaútočiť na tieto zraniteľnosti analýzou. Najviac zdajúce sa krehké oblasti sú teda vanishing pointy, zrkadlové odrazy a tiene. Čiže hlavným cieľom je rozobrať tieto vlastnosti od ich základov, aplikovať ich, a dospieť ku zrozumiteľnému a spoľahlivému záveru.</p>
         </div><!-- end of resume-item -->
 
         
@@ -79,25 +79,77 @@
       <!-- end Education -->
 
 
-      {% if site.resume_section_projects %}
-      <!-- begin Projects -->
       <section class="content-section">
+
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2>Denník</h2>
         </header>
 
-        {% for project in site.data.projects %}
-        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
-          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
-          <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
-          <p class="resume-item-copy">{{ project.description }}</p>
-        </div>
-        {% endfor %}
+        <div class="resume-item">
+          <h3>Týždeň 1 (23.02.2026 - 01.03.2026)</h3>
+          <ul>
+              <li>Založenie GitHub webovej stránky</li>
+              <li>...</li>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 2 (02.03.2026 - 08.03.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 3 (09.03.2026 - 15.03.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 4 (16.03.2026 - 22.03.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 5 (23.03.2026 - 29.03.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 6 (30.03.2026 - 05.04.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 7 (06.04.2026 - 12.04.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 8 (13.04.2026 - 19.04.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 9 (20.04.2026 - 26.04.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 10 (27.04.2026 - 03.05.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 11 (04.05.2026 - 10.05.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+
+          <h3>Týždeň 12 (11.05.2026 - 17.05.2026)</h3>
+          <ul>
+              <li>...</li>
+          </ul>
+        </div><!-- end of resume-item -->
 
       </section>
-      <!-- end Projects -->
-      {% endif %}
 
       {% if site.resume_section_skills %}
       <!-- begin Skills -->
